@@ -1,0 +1,20 @@
+/*CSS Variables*/
+:root {
+    --federal-blue: #020659;
+    --navy-blue: #020873;
+    --ultramarine: #030A8C;
+    --dodger-blue: #0D8DFB;
+    --chrysler-blue: #2104D9;
+    --dodger-blue-light: #2699FB;
+    --purple: #590242;
+}
+
+/* h1 font size 1.25em
+    h2, h3 font size 1em
+    p, dl, dd font size 1em
+    footer p font size .75em
+  */
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
