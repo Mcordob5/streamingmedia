@@ -76,7 +76,11 @@ body {
     background-color: #ffffff;
 }
 
+nav{
+    background-color: #020659;
+}
 ul {
+    display: inline;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
