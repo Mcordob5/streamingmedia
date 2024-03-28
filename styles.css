@@ -71,7 +71,7 @@ html {
 
 body {
     width: 375px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #ffffff;
 }
 
@@ -79,21 +79,28 @@ header {
     background-color: #020659;
     color: #ffffff;
     position: relative;
-    bottom: 100%;
+    top: 100px;
+    bottom: 50px;
+    right: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
-header h1 {
-    font-weight: bold;
+header h1 p{
     color: #ffffff;
+    margin-top: 50px;
+    padding: 50px;
 }
 
 nav {
     position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
     padding: 0;
-    margin: 5px;
+    margin: auto;
     text-decoration: none;
     color: #ffffff;
 }
@@ -103,7 +110,7 @@ nav ul {
     text-decoration: none;
     color: #ffffff;
     position: absolute;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #020659;
 }
 
@@ -116,6 +123,7 @@ ul {
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
+    text-decoration: none;
 }
 
 label {
@@ -197,4 +205,14 @@ input:checked~label:not(.steps) span:after {
 aside {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#playlists{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#curated{
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
