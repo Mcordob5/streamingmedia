@@ -75,12 +75,40 @@ body {
     background-color: #ffffff;
 }
 
-header{
-    
+header {
+    background-color: #020659;
+    color: #ffffff;
+    position: relative;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+header h1 {
+    font-weight: bold;
+    color: #ffffff;
 }
 
 nav {
-    
+    position: relative;
+    padding: 0;
+    margin: 5px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+    position: absolute;
+    justify-content: space-between;
+    background-color: #020659;
+}
+
+nav a:hover {
+    color: #590242;
 }
 
 ul {
@@ -164,4 +192,9 @@ input:checked~label:not(.steps) span:after {
     input {
         display: none;
     }
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
