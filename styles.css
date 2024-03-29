@@ -212,21 +212,21 @@ input:checked~label:not(.steps) span:after {
 
 main{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
 #trending{
-    grid-column-start: 1;
-    grid-column-end: 1;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 
 #playlists{
-    grid-column-start: 2;
-    grid-column-end: 2;
+    grid-area: 2 / 1 / 3 / 2;
 }
 
 #curated{
-    grid-column-start: 3;
-    grid-column-end: 3;
+    grid-area: 2 / 2 / 3 / 3;
 }
