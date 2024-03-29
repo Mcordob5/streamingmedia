@@ -70,19 +70,22 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     width: 375px;
     margin: 0, auto;
     background-color: #ffffff;
 }
 
 header {
-    background-color: #020659;
+    background-color: #2104D9;
     color: #ffffff;
-    position: relative;
+    padding: 50px;
+    /* position: relative;
     top: 100px;
     bottom: 50px;
     width: 100%;
-    z-index: 1;
+    z-index: 1; */
 }
 
 header h1 p{
@@ -91,8 +94,8 @@ header h1 p{
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
+
+    order: -1;
     padding: auto;
     margin: 0;
     color: #ffffff;
@@ -136,6 +139,7 @@ label {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    background-color: #2104D9;
 }
 
 label span {
@@ -206,17 +210,23 @@ input:checked~label:not(.steps) span:after {
     }
 }
 
-aside {
+main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-#playlists{
-    grid-column-start: 0;
+#trending{
+    grid-column-start: 1;
     grid-column-end: 1;
 }
 
-#curated{
+
+#playlists{
     grid-column-start: 2;
     grid-column-end: 2;
+}
+
+#curated{
+    grid-column-start: 3;
+    grid-column-end: 3;
 }
