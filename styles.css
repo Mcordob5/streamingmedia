@@ -71,7 +71,7 @@ html {
 
 body {
     width: 375px;
-    margin: auto;
+    margin: 0, auto;
     background-color: #ffffff;
 }
 
@@ -81,38 +81,42 @@ header {
     position: relative;
     top: 100px;
     bottom: 50px;
-    right: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
 }
 
 header h1 p{
     color: #ffffff;
-    margin-top: 50px;
-    padding: 50px;
+    position: relative;
 }
 
 nav {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    padding: 0;
-    margin: auto;
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+    margin: 0;
     color: #ffffff;
 }
 
-nav ul {
-    list-style-type: none;
+nav a {
     text-decoration: none;
-    color: #ffffff;
-    position: absolute;
-    justify-content: space-evenly;
-    background-color: #020659;
 }
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #2104D9;
+}
+
+nav li {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #2104D9;
+    color: #ffffff;
+}
+
 
 nav a:hover {
     color: #590242;
@@ -208,7 +212,7 @@ aside {
 }
 
 #playlists{
-    grid-column-start: 1;
+    grid-column-start: 0;
     grid-column-end: 1;
 }
 
