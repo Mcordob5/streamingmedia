@@ -72,7 +72,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    width: 834px;
+    width: 1020px;
     margin: 0 auto;
     background-color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -232,102 +232,6 @@ input:checked~label span:after {
 input:checked~label:not(.steps) span:before,
 input:checked~label:not(.steps) span:after {
     top: 0;
-}
-
-@media screen and (min-width:374px) {
-    ul {
-        overflow: visible;
-        position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    label span,
-    input {
-        display: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
-    #trending {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    
-    #trending h2 {
-        padding: 20px;
-        color: #590242;
-        font-size: large;
-    }
-    
-    #playlists {
-        grid-area: 2 / 1 / 3 / 2;
-        background-color: #0D8DFB;
-        color: #ffffff;
-        padding: 5px;
-    }
-    
-    #curated {
-        grid-area: 3 / 1 / 4 / 2;
-        background: #030A8C;
-        color: #ffffff;
-        padding: 5px;
-    }
-    
-    .scroll {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-    }
-    
-    .scroll section {
-        margin: 10px;
-        position: relative;
-    }
-    
-    .scroll div {
-        position: absolute;
-        top: 250px;
-        background-color: rgba(255, 255, 255, .75);
-        padding: 5px;
-        height: 50px;
-        width: 350px;
-    }
-    
-    #playlists h2 {
-        margin-top: -30px;
-        color: #590242;
-        font-size: large;
-        margin-left: 5px;
-    }
-    
-    #curated h2 {
-        margin-top: -30px;
-        color: #590242;
-        font-size: large;
-        margin-left: 5px;
-    }
-    
-    .button {
-        text-decoration: none;
-        background-color: #590242;
-        color: #ffffff;
-        border-radius: 5px;
-        padding: 10px;
-        width: 150px;
-        display: block;
-        text-align: center;
-        margin: 10px 0 30px 32px;
-        float: right;
-        margin-right: 20px;
-    }
 }
 
 main{
@@ -539,3 +443,37 @@ audio::-webkit-media-controls-enclosure {
     margin-right: 20px;
 }
 
+@media screen and (min-width:620px) {
+    ul {
+        overflow: visible;
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    label span,
+    input {
+        display: none;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    #trending{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    #playlists{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #curated{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+}
