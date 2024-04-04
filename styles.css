@@ -3,25 +3,25 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
-html, body, div, span, applet,
-object, iframe, 
-h1, h2, h3, h4, h5, h6, p,
-blockquote, pre,
-a, abbr, acronym, address, big,
-cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot,
-thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer,
-header, hgroup,
-menu, nav, output, ruby, section,
+html,body,div,
+span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+a,abbr,acronym,address,
+big,cite,code,del,
+dfn,em,img,ins,kbd,
+q,s,samp,small,strike,
+strong,sub,sup,
+tt,var,b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,
+header,hgroup,
+menu,nav,output,ruby,section,
 summary,
-time, mark, audio, video{
+time,mark,audio,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -31,9 +31,9 @@ time, mark, audio, video{
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details,
-figcaption, figure,
-footer, header, hgroup, menu, nav,
+article,aside,details,
+figcaption,figure,footer,
+header,hgroup,menu,nav,
 section {
     display: block;
 }
@@ -42,18 +42,16 @@ body {
     line-height: 1;
 }
 
-ol,
-ul {
+ol,ul {
     list-style: none;
 }
 
-blockquote, q {
+blockquote,q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before, q:after {
+blockquote:before,blockquote:after,
+q:before,q:after {
     content: '';
     content: none;
 }
@@ -64,7 +62,6 @@ table {
 }
 
 /* start of CSS for mockup design */
-
 html {
     background-color: #020659;
 }
@@ -78,30 +75,32 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer{
+footer {
     padding: 20px;
 }
 
-h1{
+h1 {
     font-size: 1.25em;
     font-weight: bolder;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-h2 h3{
+h2 h3 {
     font-size: 1em;
 }
 
-p dl dd{
+p dl dd {
     font-size: 1em;
     font-weight: bold;
 }
 
-footer p{
+footer p {
     font-size: .75em;
     text-align: center;
     color: #590242;
@@ -114,7 +113,7 @@ header {
     padding: 20px;
 }
 
-header h1 p{
+header h1 p {
     color: #ffffff;
     position: relative;
     padding: 20px;
@@ -123,7 +122,8 @@ header h1 p{
 ul li:first-child a {
     font-size: 1.2em;
 }
-nav h2{
+
+nav h2 {
     display: none;
 }
 
@@ -157,7 +157,7 @@ nav li {
     color: #ffffff;
 }
 
-#dropdown{
+#dropdown {
     display: none;
 }
 
@@ -237,7 +237,7 @@ input:checked~label:not(.steps) span:after {
     top: 0;
 }
 
-main{
+main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -249,7 +249,7 @@ main{
     grid-area: 1 / 1 / 2 / 3;
 }
 
-#trending h2{
+#trending h2 {
     padding: 20px;
     color: #590242;
     font-size: large;
@@ -282,7 +282,7 @@ main{
     position: relative;
 }
 
-.scroll div{
+.scroll div {
     position: absolute;
     top: 250px;
     background-color: rgba(255, 255, 255, .75);
@@ -291,7 +291,7 @@ main{
     width: 350px;
 }
 
-#playlists h2{
+#playlists h2 {
     margin-top: -30px;
     color: #590242;
     font-size: large;
@@ -311,7 +311,7 @@ dl {
     padding-top: 10px;
 }
 
-h3{
+h3 {
     color: #590242
 }
 
@@ -320,14 +320,14 @@ dt {
     color: #590242;
 }
 
-.scroll-side-1{
+.scroll-side-1 {
     overflow-y: auto;
     overflow-x: hidden;
     height: 400px;
     margin-top: 30px;
 }
 
-.scroll-side-2{
+.scroll-side-2 {
     overflow-y: auto;
     overflow-x: hidden;
     height: 400px;
@@ -343,7 +343,8 @@ dt {
     padding: 12px;
 }
 
-.scroll-side-1 h3, p {
+.scroll-side-1 h3,
+p {
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
@@ -363,18 +364,19 @@ dt {
     padding: 12px;
 }
 
-.scroll-side-2 h3, p {
+.scroll-side-2 h3,
+p {
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
     color: #ffffff;
 }
 
-.scroll-side-2 p{
+.scroll-side-2 p {
     margin-top: -70px;
 }
 
-audio{
+audio {
     position: absolute;
     bottom: 150px;
     left: 5px;
@@ -455,7 +457,7 @@ audio::-webkit-media-controls-enclosure {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    ul li:first-child{
+    ul li:first-child {
         display: grid;
     }
 
@@ -464,13 +466,13 @@ audio::-webkit-media-controls-enclosure {
         display: none;
     }
 
-    body{
+    body {
         display: flex;
         flex-direction: column;
         width: 520px;
     }
 
-    main{
+    main {
         /* display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
